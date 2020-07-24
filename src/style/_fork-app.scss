@@ -1,0 +1,133 @@
+.fork-app{
+  position: relative;
+  height: 100%;
+  background-image: url("../img/bg/fork-app-320.png");
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+  &__container{
+    margin: 0 auto;
+    padding: 60px 10px 487px 10px;
+    text-align: center;
+  }
+  &__title{
+    color: white;
+    font-size: 34pt;
+    font-weight: bold;
+    margin-bottom: 13px;
+  }
+  &__text{
+    color: #8D81AC;
+    font-size: 15.5pt;
+    line-height: 30px;
+  }
+  &__text_uppercase{
+    margin-top: 13px;
+    text-transform: uppercase;
+    color: #848E97;
+    line-height: normal;
+    font-size: 9pt;
+  }
+  &__button{
+    left: calc(50% - 145px);
+    top: calc(100% - 25.2px);
+    border: 0;
+    border-radius: 30px;
+    font-size: 9pt;
+    font-stretch: ultra-expanded;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    padding: 16px 59px;
+    background: #8D81AC;
+    color: white;
+  }
+  &__button:hover{
+    color: #8D81AC;
+    background: white;
+  }
+  &__paragraph{
+    color: #848E97;
+    font-size: 8pt;
+    position: absolute;
+    left: calc(50% - 126px + 60px);
+    top: calc(100% + 25.2px + 13px);
+  }
+}
+@media (min-width: 481px) and (max-width: 992px){
+  .container{
+    min-width: 481px;
+    max-width: 992px ;
+  }
+  .fork-app {
+    background-image: url("../img/bg/fork-app-768.png");
+
+    &__title {
+      font-size: 50pt;
+    }
+    &__text{
+      color: #8D81AC;
+      font-size: 19pt;
+      line-height: 40px;
+    }
+    &__text_uppercase{
+      margin-top: 13px;
+      text-transform: uppercase;
+      color: #848E97;
+      line-height: normal;
+      font-size: 13pt;
+    }
+    &__button{
+      left: calc(50% - 195px);
+      top: calc(100% - 31.1px);
+      font-size: 14pt;
+      padding: 20px 67px;
+    }
+    &__paragraph{
+      color: #848E97;
+      font-size: 10pt;
+      position: absolute;
+      left: calc(50% - 140px + 60px);
+      top: calc(100% + 25.2px + 13px);
+    }
+
+  }
+}
+@media (min-width: 993px) {
+  .container {
+    min-width: 993px;
+    max-width: 1200px;
+  }
+  .fork-app {
+    background-image: url("../img/bg/fork-app.png");
+
+    &__title {
+      font-size: 58pt;
+    }
+    &__text{
+      color: #8D81AC;
+      font-size: 22pt;
+      line-height: 30px;
+    }
+    &__text_uppercase{
+      margin-top: 13px;
+      text-transform: uppercase;
+      color: #848E97;
+      line-height: normal;
+      font-size: 14pt;
+    }
+    &__button{
+      left: calc(50% - 195px);
+      top: calc(100% - 31.1px);
+      font-size: 14pt;
+      padding: 20px 67px;
+    }
+    &__paragraph{
+      color: #848E97;
+      font-size: 10pt;
+      position: absolute;
+      left: calc(50% - 140px + 60px);
+      top: calc(100% + 25.2px + 13px);
+    }
+  }
+}

@@ -1,0 +1,10 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+.container{
+  min-width: 320px;
+  max-width: 480px;
+}
+@import "header";
+@import "fork-app";

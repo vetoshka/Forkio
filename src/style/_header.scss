@@ -1,0 +1,238 @@
+.header {
+  background: #27262A;
+  height: 100px;
+  &__container{
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title{
+    display: flex;
+    align-items: center;
+  }
+  &__icon_hidden{
+    display: none;
+  }
+  &__FORKIO{
+    font-weight: bold;
+    font-size: 18pt;
+    margin-left: 8px;
+    display: none;
+    color: #8D81AC;
+  }
+  &__button{
+    background: #8D81AC;
+    line-height: 37px;
+    padding: 0 34px;
+    border: 0 solid #8D81AC;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  &__button:hover{
+    color: #8D81AC;
+    background: white;
+  }
+  &__drop-menu {
+    display: none;
+  }
+  &__drop-menu_active{
+    z-index: 1;
+    display: block;
+    position: absolute;
+    top: 100px;
+  }
+}
+.drop-menu{
+  background: #333333;
+  width: calc(100% - 20px);
+  height: 367px;
+  &__link{
+    font-size: 18pt;
+  }
+  &__item{
+    cursor: pointer;
+    display: flex;
+    border-top: 2px solid #3B3B3B;
+    color: #8D81AC;
+    padding: 16px 0;
+    &:hover{
+      & .drop-menu__link{
+        margin-left: 25px;
+        color: white;
+      }
+      & .drop-menu__block{
+        display: block;
+      }
+    }
+  }
+  &__block{
+    display: none;
+    background: #8D81AC;
+    width: 8px;
+    height: 53px;
+  }
+  &__item_last{
+    border-bottom: 2px solid #3b3b3b;
+  }
+  &__link{
+    margin-left: 33px;
+    line-height: 53px;
+  }
+}
+.burger-menu{
+  &__item_first{
+    margin-left: 6px;
+    width: 20px;
+    height: 2px;
+    background: #E5E3E3;
+  }
+  &__item{
+    margin-top: 2px;
+    width: 26px;
+    height: 2px;
+    background: #E5E3E3;
+  }
+}
+.header__title{
+  &:hover .header__icon{
+    display: none;
+  }
+  &:hover .header__icon_hidden{
+    display: inline-block;
+  }
+  &:hover .header__FORKIO{
+    color: white;
+  }
+}
+@media (min-width: 481px) and (max-width: 992px){
+  .container{
+    min-width: 481px;
+    max-width: 992px ;
+  }
+  .header{
+    &__container{
+      padding: 10px;
+    }
+    &__FORKIO{
+      display: inline-block;
+      grid-area: FORKIO;
+    }
+    &__button_burger-menu{
+      display: none;
+    }
+    &__button{
+      justify-self: flex-end;
+      padding: 0 45px;
+      grid-area: button;
+    }
+    &__container{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+              "FORKIO . button button"
+              "drop-menu drop-menu drop-menu drop-menu ";
+    }
+  }
+  .drop-menu{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-area: drop-menu;
+    background: none;
+    width: auto;
+    height: auto;
+    &__link{
+      font-size: 12pt;
+    }
+    &__item{
+      width: 24vw;
+      display: flex;
+      justify-content: center;
+      border-top: 0;
+      padding: 0;
+      &:hover{
+        & .drop-menu__link{
+          margin-left: 0;
+        }
+        & .drop-menu__block{
+          display: none;
+        }
+      }
+    }
+    &__block{
+      display: none;
+      background: #8D81AC;
+      width: 8px;
+      height: 53px;
+    }
+    &__item_last{
+      border-bottom: 0;
+    }
+    &__link{
+      margin-left: 0;
+      line-height: 53px;
+    }
+  }
+}
+@media (min-width: 993px){
+  .container{
+    min-width: 993px;
+    max-width: 1200px;
+  }
+  .header{
+    &__button_burger-menu{
+      display: none;
+    }
+    &__FORKIO{
+      font-weight: bold;
+      font-size: 18pt;
+      margin-left: 8px;
+      display: inline-block;
+    }
+    &__button{
+      padding: 0 44px;
+      min-width: 140px;
+    }
+    &__drop-menu{
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+  .drop-menu{
+    background: none;
+    height: auto;
+    width: 100%;
+    &__link{
+      font-size: 12pt;
+    }
+    &__item_last{
+      border: 0;
+    }
+    &__item{
+      cursor: pointer;
+      display: inline-block;
+      border-top: 0;
+      padding: 0;
+      margin-right: 48px;
+      &:hover{
+        & .drop-menu__link{
+          margin-left: 0;
+        }
+        & .drop-menu__block{
+          display: none;
+        }
+      }
+    }
+    &__link{
+      margin-left: 0;
+      line-height: 53px;
+    }
+  }
+}
