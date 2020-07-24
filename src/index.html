@@ -1,62 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
     <link href="style/reset.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300&display=swap" rel="stylesheet">
+    <!-- FONTS STYLE-->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300&display=swap"
+        rel="stylesheet">
     <link href="style/main.css" rel="stylesheet">
-    <script
-            src="https://code.jquery.com/jquery-3.5.1.min.js"
-            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="script/main.js"></script>
 </head>
+
 <body>
-<header class="header">
-    <div class="header__container container">
-        <div class="header__title">
-            <a href="" class="header__icon"><img src="img/icon/navbar-logo.png" alt="error"></a>
-            <a href="" class="header__icon header__icon_hidden"><img src="img/icon/navbar-logo-hover.png" alt="error"></a>
-            <a href="" class="header__FORKIO"><h2>FORKIO</h2></a>
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__title">
+                <a href="" class="header__icon"><img src="img/icon/navbar-logo.png" alt="error"></a>
+                <a href="" class="header__icon header__icon_hidden"><img src="img/icon/navbar-logo-hover.png"
+                        alt="error"></a>
+                <a href="" class="header__FORKIO">
+                    <h2>FORKIO</h2>
+                </a>
+            </div>
+            <ul class="header__drop-menu drop-menu">
+                <li class="drop-menu__item">
+                    <div class="drop-menu__block"></div>
+                    <a href="" class="drop-menu__link">Overview</a>
+                </li>
+                <li class="drop-menu__item">
+                    <div class="drop-menu__block"></div>
+                    <a href="" class="drop-menu__link">About Fork</a>
+                </li>
+                <li class="drop-menu__item">
+                    <div class="drop-menu__block"></div>
+                    <a href="" class="drop-menu__link">Buying Options</a>
+                </li>
+                <li class="drop-menu__item drop-menu__item_last">
+                    <div class="drop-menu__block"></div>
+                    <a href="" class="drop-menu__link">Support</a>
+                </li>
+            </ul>
+            <div class="header__button">
+                Buy Now
+            </div>
+            <div class="header__button_burger-menu burger-menu" data-status="">
+                <div class="burger-menu__item_first"></div>
+                <div class="burger-menu__item"></div>
+                <div class="burger-menu__item"></div>
+            </div>
         </div>
-        <ul class="header__drop-menu drop-menu">
-            <li class="drop-menu__item">
-                <div class="drop-menu__block"></div>
-                <a href="" class="drop-menu__link">Overview</a>
-            </li>
-            <li class="drop-menu__item">
-                <div class="drop-menu__block"></div>
-                <a href="" class="drop-menu__link">About Fork</a>
-            </li>
-            <li class="drop-menu__item">
-                <div class="drop-menu__block"></div>
-                <a href="" class="drop-menu__link">Buying Options</a>
-            </li>
-            <li class="drop-menu__item drop-menu__item_last">
-                <div class="drop-menu__block"></div>
-                <a href="" class="drop-menu__link">Support</a>
-            </li>
-        </ul>
-        <div class="header__button">
-            Buy Now
+    </header>
+    <section class="fork-app">
+        <div class="fork-app__container container">
+            <h1 class="fork-app__title">Fork App</h1>
+            <h3 class="fork-app__text">A real gamechanger in the world of web development</h3>
+            <h3 class="fork-app__text fork-app__text_uppercase">v. 2.8 For Mac and Windows</h3>
         </div>
-        <div class="header__button_burger-menu burger-menu" data-status="">
-            <div class="burger-menu__item_first"></div>
-            <div class="burger-menu__item"></div>
-            <div class="burger-menu__item"></div>
+        <button class="fork-app__button">Download For Free Now</button>
+        <p class="fork-app__paragraph">Unlimited 30-Days Trial Period</p>
+    </section>
+
+    <section class="revolutionary-editor">
+        <div class="container revolutionary-editor__container">
+            <h2 class="revolutionary-editor__title">Revolutionary Editor</h2>
+            <p class="revolutionary-editor__description">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui
+                laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue.</p>
+            <div class="revolutionary-editor__buttons">
+                <a href="#" class="revolutionary-editor__button">
+                    <p class="revolutionary-editor__button__left">
+                        <img src="img/icon/vision.png" alt="" class="git-icon">
+                        Watch
+                    </p>
+                    <p class="revolutionary-editor__button__right">1.234</p>
+                </a>
+                <a href="#" class="revolutionary-editor__button">
+                    <p class="revolutionary-editor__button__left">
+                        <img src="img/icon/star.png" alt="" class="git-icon">
+                        Star
+                    </p>
+                    <p class="revolutionary-editor__button__right">2.436</p>
+                </a>
+                <a href="#" class="revolutionary-editor__button">
+                    <p class="revolutionary-editor__button__left">
+                        <img src="img/icon/network.png" alt="" class="git-icon">
+                        Fork
+                    </p>
+                    <p class="revolutionary-editor__button__right">657</p>
+                </a>
+            </div>
         </div>
-    </div>
-</header>
-<section class="fork-app">
-    <div class="fork-app__container container">
-        <h1 class="fork-app__title">Fork App</h1>
-        <h3 class="fork-app__text">A real gamechanger in the world of web development</h3>
-        <h3 class="fork-app__text fork-app__text_uppercase">v. 2.8 For Mac and Windows</h3>
-    </div>
-    <button class="fork-app__button">Download  For  Free  Now</button>
-    <p class="fork-app__paragraph">Unlimited 30-Days Trial Period</p>
-</section>
+    </section>
+
+    <!-- HERE IS WHAT YOU GET -->
+
+    <section class="here-is-what-you-get">
+        <div class="here-is-what-you-get__container container">
+            <h2 class="here-is-what-you-get__title"><span class="arrow"><</span>Here is what you get<span class="arrow">></span></Here>
+            </h2>
+            <div class="here-is-what-you-get__items">
+                <div class="here-is-what-you-get__item">
+                    <div class="here-is-what-you-get__item__img__container">
+                        <img src="img/icon/ic_e_1.png" alt="" class="here-is-what-you-get__item__img img-m-edit">
+                    </div>
+                    <div class="here-is-what-you-get__item__desc__container">
+                        <p class="here-is-what-you-get__item__title">Creatred to Make The Web Better</p>
+                        <p class="here-is-what-you-get__item__description">Aenean cursus imperdiet nisl id fermentum.
+                            Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget
+                            ut
+                            augue.</p>
+                    </div>
+                </div>
+                <div class="here-is-what-you-get__item">
+                    <div class="here-is-what-you-get__item__img__container">
+                        <img src="img/icon/ic_e_2.png" alt="" class="here-is-what-you-get__item__img">
+                    </div>
+                    <div class="here-is-what-you-get__item__desc__container">
+                        <p class="here-is-what-you-get__item__title">Incredibly Powerful Tool</p>
+                        <p class="here-is-what-you-get__item__description">Maecenas eu dictum felis, a dignissim nibh.
+                            Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi
+                            gravida
+                            luctus. Aliquam erat volutpat.</p>
+                    </div>
+                </div>
+                <div class="here-is-what-you-get__item">
+                    <div class="here-is-what-you-get__item__img__container">
+                        <img src="img/icon/ic_e_3.png" alt="" class="here-is-what-you-get__item__img">
+                    </div>
+                    <div class="here-is-what-you-get__item__desc__container">
+                        <p class="here-is-what-you-get__item__title">Experimental Stuff</p>
+                        <p class="here-is-what-you-get__item__description">Maecenas eu dictum felis, a dignissim nibh.
+                            Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi
+                            gravida
+                            luctus. Aliquam erat volutpat.</p>
+                    </div>
+                </div>
+                <div class="here-is-what-you-get__item">
+                    <div class="here-is-what-you-get__item__img__container">
+                        <img src="img/icon/ic_e_4.png" alt="" class="here-is-what-you-get__item__img">
+                    </div>
+                    <div class="here-is-what-you-get__item__desc__container">
+                        <p class="here-is-what-you-get__item__title">Creatred to Make The Web Better</p>
+                        <p class="here-is-what-you-get__item__description">Aenean cursus imperdiet nisl id fermentum.
+                            Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget
+                            ut
+                            augue.</p>
+                    </div>
+                </div>
+            </div>
+            <img src="img/icon/editor.png" alt="" class="here-is-what-you-get__img__editor">
+        </div>
+    </section>
+
+    <!-- FORK SUBSCRIBE PRICING -->
+
+    <section class="fork-subscribe-pricing">
+        <div class="fork-subscribe-pricing__container container">
+            <h2 class="fork-subscribe-pricing__title">Fork Subscription Pricing</h2>
+            <div class="fork-subscribe-pricing__items">
+                <div class="fork-subscribe-pricing__item">
+                    <h3 class="fork-subscribe-pricing__item__title">Students</h3>
+                    <p class="fork-subscribe-pricing__item__price"><span class="price-edit">$</span>29</p>
+                    <p class="fork-subscribe-pricing__item__price__desc">Per Month</p>
+                    <p class="fork-subscribe-pricing__item__benefits">Personal License</p>
+                    <div class="fork-subscribe-pricing__item__button__container">
+                        <a href="" class="fork-subscribe-pricing__item__button">Purshase</a>
+                    </div>
+                </div>
+                <div class="fork-subscribe-pricing__item">
+                    <h3 class="fork-subscribe-pricing__item__title">Professional</h3>
+                    <p class="fork-subscribe-pricing__item__price"><span class="price-edit">$</span>59</p>
+                    <p class="fork-subscribe-pricing__item__price__desc">Per Month</p>
+                    <p class="fork-subscribe-pricing__item__benefits">Personal License</p>
+                    <p class="fork-subscribe-pricing__item__benefits__second">Email Support</p>
+                    <div class="fork-subscribe-pricing__item__button__container">
+                        <a href="" class="fork-subscribe-pricing__item__button">Purshase</a>
+                    </div>
+                </div>
+                <div class="fork-subscribe-pricing__item">
+                    <h3 class="fork-subscribe-pricing__item__title">Agency</h3>
+                    <p class="fork-subscribe-pricing__item__price"><span class="price-edit">$</span>99</p>
+                    <p class="fork-subscribe-pricing__item__price__desc">Per Month</p>
+                    <p class="fork-subscribe-pricing__item__benefits">1-12 Team Members</p>
+                    <p class="fork-subscribe-pricing__item__benefits__second">Phone Support</p>
+                    <div class="fork-subscribe-pricing__item__button__container">
+                        <a href="" class="fork-subscribe-pricing__item__button">Purshase</a>
+                    </div>
+                </div>
+                <div class="fork-subscribe-pricing__item">
+                    <h3 class="fork-subscribe-pricing__item__title">Enterprise</h3>
+                    <p class="fork-subscribe-pricing__item__price"><span class="price-edit">$</span>159</p>
+                    <p class="fork-subscribe-pricing__item__price__desc">Per Month</p>
+                    <p class="fork-subscribe-pricing__item__benefits">Unlimited Team Members</p>
+                    <p class="fork-subscribe-pricing__item__benefits__second">24/ 7 Phone Support</p>
+                    <div class="fork-subscribe-pricing__item__button__container">
+                        <a href="" class="fork-subscribe-pricing__item__button">Purshase</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
