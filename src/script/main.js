@@ -1,5 +1,5 @@
 $(document).ready(()=>{
-   let button = $('.header__button_burger-menu'),
+   let button = $('.header__burger-menu'),
    dropMenu = $('.header__drop-menu');
    button.click(() =>{
        if (button.data('status') === ''){

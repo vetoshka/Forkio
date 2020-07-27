@@ -94,7 +94,7 @@
     background: #E5E3E3;
   }
   &__item{
-    margin-top: 2px;
+    margin-top: 4px;
     width: 26px;
     height: 2px;
     background: #E5E3E3;
@@ -124,7 +124,7 @@
       display: inline-block;
       grid-area: FORKIO;
     }
-    &__button_burger-menu{
+    &__burger-menu{
       display: none;
     }
     &__button{
@@ -187,7 +187,7 @@
     max-width: 1200px;
   }
   .header{
-    &__button_burger-menu{
+    &__burger-menu{
       display: none;
     }
     &__FORKIO{
