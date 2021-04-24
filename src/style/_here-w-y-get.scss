@@ -1,5 +1,6 @@
 .here-is-what-you-get {
     background-color: #f4f4f4;
+    position: relative;
 
     &__container {
         margin: 0 auto;
@@ -168,7 +169,7 @@
     &__img__editor {
       width: 52%;
       position: absolute;
-      top: 1378px;
+      top: 300px;
       right: 0;
     }
 
