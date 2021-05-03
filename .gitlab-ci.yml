@@ -1,0 +1,12 @@
+pages:
+  stage: deploy
+  script:
+    - npm i
+    - gulp build
+    - cd dist
+    - mv dist public
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
