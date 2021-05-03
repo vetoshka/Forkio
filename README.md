@@ -1,7 +1,8 @@
+Demo: https://reanimator737.github.io/Fork/
 Состав участников 
-1. Каирцев Александр (первый студент, сделал хедер и секции 'fork-app', 'People Are Talking About Fork', настроил сборку проекта)
-2. Юхимец Антон (второй студент, сделал секции: "fork-suncribe", "rev-editor", "here-w-y-get")
-В проекте использовались:
+1. Kairtsev Alexandr (made a header and sections 'fork-app', 'People talk about a fork', set up the build of the project)
+2. Yukhimets Anton (made sections: "fork-suncribe", "rev-editor", "here-w-y-get")
+In project we use:
 "browser-sync",
 "gulp",
 "gulp-autoprefixer",
