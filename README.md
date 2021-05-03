@@ -4,8 +4,7 @@
 1. Kairtsev Alexandr (made a header and sections 'fork-app', 'People talk about a fork', set up the build of the project)
 2. Yukhimets Anton (made sections: "fork-suncribe", "rev-editor", "here-w-y-get")
 
-**Launching project**
-To launch project follow procedure:
+**To launch project follow procedure:**
 1. gulp build
 2. gulp dev
 
